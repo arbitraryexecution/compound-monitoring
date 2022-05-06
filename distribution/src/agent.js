@@ -75,8 +75,7 @@ function provideInitialize(data) {
     data.protocolAbbreviation = config.protocolAbbreviation;
     data.developerAbbreviation = config.developerAbbreviation;
 
-    data.distributionThresholdPercent = config.distributionThresholdPercent;
-    data.minimumDistributionAmount = config.minimumDistributionAmount;
+    data.maximumSaneDistributionAmount = config.maximumSaneDistributionAmount;
 
     data.provider = getEthersProvider();
 
@@ -122,7 +121,8 @@ function provideHandleTransaction(data) {
       protocolName,
       protocolAbbreviation,
       developerAbbreviation,
-      distributionSignatures
+      distributionSignatures,
+      maximumSaneDistributionAmount,
     } = data;
 
     if (!comptrollerContract) throw new Error('handleTransaction called before initialization');
