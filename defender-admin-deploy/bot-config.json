@@ -1,0 +1,74 @@
+{
+  "developerAbbreviation": "AE",
+  "protocolName": "Forta",
+  "protocolAbbreviation": "FORTA",
+  "contracts": {
+    "AgentRegistryProxy": {
+      "address": "0x61447385B019187daa48e91c55c02AF1F1f3F863",
+      "abiFile": "AgentRegistryProxy.json",
+      "proxy": "AgentRegistry"
+    },
+    "AgentRegistry": {
+      "address": "0xA8A26969f7Be888D020B595340c490c02ec445dD",
+      "abiFile": "AgentRegistry.json",
+      "events": {
+        "AccessManagerUpdated": {
+          "type": "Info",
+          "severity": "Info"
+        },
+        "AdminChanged": {
+          "type": "Info",
+          "severity": "Info"
+        },
+        "AgentCommitted": {
+          "type": "Info",
+          "severity": "Info"
+        },
+        "AgentEnabled": {
+          "type": "Info",
+          "severity": "Info"
+        },
+        "AgentUpdated": {
+          "type": "Info",
+          "severity": "Info"
+        },
+        "Approval": {
+          "type": "Info",
+          "severity": "Info"
+        },
+        "ApprovalForAll": {
+          "type": "Info",
+          "severity": "Info"
+        },
+        "BeaconUpgraded": {
+          "type": "Info",
+          "severity": "Info"
+        },
+        "RouterUpdated": {
+          "type": "Info",
+          "severity": "Info"
+        },
+        "FrontRunningDelaySet": {
+          "type": "Info",
+          "severity": "Info"
+        },
+        "StakeControllerUpdated": {
+          "type": "Info",
+          "severity": "Info"
+        },
+        "StakeThresholdChanged": {
+          "type": "Info",
+          "severity": "Info"
+        },
+        "Transfer": {
+          "type": "Info",
+          "severity": "Info"
+        },
+        "Upgraded": {
+          "type": "Info",
+          "severity": "Info"
+        }
+      }
+    }
+  }
+}
