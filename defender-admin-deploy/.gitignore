@@ -1,1 +1,4 @@
+node_modules
+dist
+forta.config.json
 config.json
