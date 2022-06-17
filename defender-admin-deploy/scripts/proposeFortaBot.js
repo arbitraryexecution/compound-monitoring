@@ -15,6 +15,7 @@ const {
     chainIds,
   } = container.cradle;
 
+  console.log(chainIds)
 
 // load values from the .env file
 require('dotenv').config();
@@ -65,10 +66,14 @@ async function main() {
   const owner = signer.address // the user's address who input their private key in the .env will be the owner
 
   const client = new AdminClient({apiKey: defenderApiKey, apiSecret: defenderApiSecret});
+  
+  const agentRegistryAddress = agentRegistry.agentRegistryContractAddress;
+  
+  // 0xFCbD2052cdD0B4fB10EDc60Eb3eAFeE434aee943 - rinkeby test contract address
 
   // function createAgent(uint256 agentId, address owner, string calldata metadata, uint256[] calldata chainIds)
   await client.createProposal({
-    contract: { address: agentRegistry.agentRegistryContractAddress, network: 'matic'}, // target contract - should be the forta bot registrar smart contract
+    contract: { address: agentRegistryAddress, network: 'matic'}, // target contract - should be the forta bot registrar smart contract
     title: 'Forta Bot Deployment Test', // title of proposal
     description: 'Testing Forta Bot deployment from Defender Admin', // description of proposal
     type: 'custom', // put custom for custom actions (anything that's not a pause, unpause or upgrade action)
@@ -92,8 +97,8 @@ async function main() {
           "type": "uint256[]"
         }]
     },
-    functionInputs: [agentId, owner, manifestReference, chainIds], // function inputs
-    via: signer.address, // address you want to execute the proposal
+    functionInputs: [agentId, owner, manifestReference, ['137']], // function inputs
+    via: owner, // address you want to execute the proposal
     viaType: 'EOA' // 'Gnosis Safe', 'Gnosis Multisig', or 'EOA'
   })
 }
