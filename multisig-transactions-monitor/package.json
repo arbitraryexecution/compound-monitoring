@@ -21,14 +21,13 @@
     "test": "jest"
   },
   "dependencies": {
-    "bignumber.js": "^9.0.1",
-    "forta-agent": "^0.1.1"
+    "forta-agent": "0.1.1"
   },
   "devDependencies": {
-    "eslint": "^8.16.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "jest": "^28.1.0",
-    "nodemon": "^2.0.8"
+    "eslint": "8.16.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.26.0",
+    "jest": "28.1.0",
+    "nodemon": "2.0.8"
   }
 }

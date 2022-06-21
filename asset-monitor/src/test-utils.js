@@ -1,3 +1,4 @@
+/* eslint-disable no-loss-of-precision */
 const { ethers } = require('forta-agent');
 
 /* eslint-disable no-loss-of-precision */

@@ -60,7 +60,7 @@ Then run:
 `npm run propose`
 
 
-## Approve Proposed Forta Bot Deployment 
+## Approve Proposed Forta Bot Deployment
 
 Approving the proposed transaction can be performed through the Gnosis Safe Web UI (recommended), or through the command line.
 

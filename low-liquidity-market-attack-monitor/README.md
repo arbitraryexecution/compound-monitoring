@@ -2,7 +2,7 @@
 
 ## Description
 
-This bot monitors Compound Finance cToken contracts that have low liquidity for potential 
+This bot monitors Compound Finance cToken contracts that have low liquidity for potential
 market attacks where a malicious actor mints cTokens and then transfers additional tokens in
 order to unbalance the contract such that subsequent mints will not yield cTokens.
 
@@ -18,4 +18,4 @@ order to unbalance the contract such that subsequent mints will not yield cToken
     - Minted Amount
     - Minted COMP Tokens
     - Malicious Address
-    - Malicious Transfer Amount 
+    - Malicious Transfer Amount

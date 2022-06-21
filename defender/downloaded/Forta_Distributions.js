@@ -23,7 +23,7 @@ function createDiscordMessage(compAccrued, compDistributed, receiver, transactio
     return `${etherscanLink} 🌊 **${receiverFormatted}** previously had no **COMP** accrued and was just distributed **COMP** tokens`;
   }
 
-  // % disctribution % is calculated by compDistributed / compAccrued * 100
+  // % distribution % is calculated by compDistributed / compAccrued * 100
   // format the number to have comma separators for powers of 1000
   const internationalNumberFormat = new Intl.NumberFormat('en-US');
 

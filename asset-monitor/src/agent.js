@@ -1,10 +1,12 @@
+/* eslint-disable no-param-reassign */
 const {
   Finding, FindingSeverity, FindingType, ethers, getEthersBatchProvider,
 } = require('forta-agent');
 
-const Web3 = require('web3-eth');
+const web3 = require('web3-eth');
 
-const web3Eth = new Web3();
+// eslint-disable-next-line new-cap
+const web3Eth = new web3();
 
 const {
   getAbi,
@@ -155,8 +157,12 @@ function provideInitialize(data) {
 
     data.upgradeableProxyAssets = [];
     const promises = data.cTokenAddresses.map(async (address) => {
-      // eslint-disable-next-line max-len
-      const underlyingAsset = await getUnderlyingAsset(address, data.cTokenAbi, data.provider, data.proxyPatterns);
+      const underlyingAsset = await getUnderlyingAsset(
+        address,
+        data.cTokenAbi,
+        data.provider,
+        data.proxyPatterns,
+      );
       if (underlyingAsset.isProxy) data.upgradeableProxyAssets.push(underlyingAsset);
     });
     await Promise.all(promises);

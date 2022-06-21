@@ -25,7 +25,7 @@ and severities for each one.
 
 ### [Compound Distribution Monitor](distribution/README.md)
 
-This bot monitors the Compound Finance Comptroller contract for distribution events that exceed a 
+This bot monitors the Compound Finance Comptroller contract for distribution events that exceed a
 set of configurable parameters.
 
 ### [Governance Event Monitor](governance/README.md)
@@ -44,7 +44,7 @@ This bot detects when an account on Compound is able to be liquidated.
 
 ### [Low Liquidity Market Attack Monitor](low-liquidity-market-attack-monitor/README.md)
 
-This bot monitors Compound Finance cToken contracts that have low liquidity for potential 
+This bot monitors Compound Finance cToken contracts that have low liquidity for potential
 market attacks where a malicious actor mints cTokens and then transfers additional tokens in
 order to unbalance the contract such that subsequent mints will not yield cTokens.
 

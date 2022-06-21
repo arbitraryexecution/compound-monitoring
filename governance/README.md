@@ -18,7 +18,7 @@ to Proposals and Voting.  All alert types and severities are set to Info.
     - Target addresses for calls to be made during proposal execution
     - Values to be passed to target calls during proposal execution, named "_values" due to a naming collision with JavaScript Object method name
     - Function signatures to be passed during proposal execution
-    - Call datas to be passed to each individual function during proposal execution 
+    - Call datas to be passed to each individual function during proposal execution
     - Starting block for voting period
     - Ending block for voting period
     - Description of proposal
@@ -31,7 +31,7 @@ to Proposals and Voting.  All alert types and severities are set to Info.
     - Address of GovernorBravo contract
     - Voter address
     - Number of votes cast by voter
-    - Reason string that accompanies vote 
+    - Reason string that accompanies vote
     - First line of proposal description
 
 <!-- -->

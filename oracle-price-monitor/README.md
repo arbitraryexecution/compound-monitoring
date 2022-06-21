@@ -21,11 +21,11 @@ a ValidatorProxy reported a cToken price that is outside of the Uniswap V2 TWAP 
 ## Testing
 
 Running against a real transaction:
-```
+```console
 npx forta-agent run --tx 0xe9456ccee1b1764dfe80291f3b894a29f0789f20f995de7d88ff186e8cafe55c
 ```
 
 Run unit tests:
-```
+```console
 npm test
 ```

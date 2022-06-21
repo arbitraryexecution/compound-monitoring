@@ -25,6 +25,7 @@ const { getAbi } = require('./utils');
 
 const config = require('../bot-config.json');
 
+// eslint-disable-next-line new-cap
 const web3Eth = new Web3();
 
 // utility function specific for this test module

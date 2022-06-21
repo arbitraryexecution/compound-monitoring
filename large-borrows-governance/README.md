@@ -21,6 +21,6 @@ to pass significant governance thresholds. This can be an early indication of go
 ## Testing
 
 Run unit tests:
-```
+```console
 npm test
 ```

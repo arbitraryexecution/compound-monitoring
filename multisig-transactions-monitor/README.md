@@ -18,7 +18,7 @@ This bot detects specific transactions originating from and/or interacting with 
     - Owner address added
     - Compound multisig address
 
-- AE-COMP-MULITSIG-OWNER-REMOVED-ALERT
+- AE-COMP-MULTISIG-OWNER-REMOVED-ALERT
   - Fired when an owner is removed from the Compound multisig wallet
   - Type is always set to `Info`
   - Severity is always set to `Info`

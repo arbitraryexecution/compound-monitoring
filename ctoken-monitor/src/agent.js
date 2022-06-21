@@ -64,6 +64,7 @@ async function createCTokenAlert(
   contractAddress,
   eventType,
   eventSeverity,
+  usdValue,
   args,
   protocolName,
   protocolAbbreviation,
@@ -82,6 +83,7 @@ async function createCTokenAlert(
       cTokenSymbol,
       contractAddress,
       eventName,
+      usdValue,
       ...eventArgs,
     },
   });
@@ -238,6 +240,7 @@ function provideHandleTransaction(data) {
         log.address,
         specificEvent.type,
         specificEvent.severity,
+        value.toString(),
         log.args,
         protocolName,
         protocolAbbreviation,
